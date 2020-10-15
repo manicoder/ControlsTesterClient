@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsTesterClient.MainPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" Padding="30" VerticalOptions="FillAndExpand" Spacing="30">
+        <Frame HorizontalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="WhiteSmoke" Padding="0,10,0,0">
+                 <Entry x:Name="TxtUserName" TextColor="Black"  Placeholder="Enter text" VerticalOptions="End" TextChanged="TxtUserName_TextChanged" ></Entry>
+            </StackLayout>
+        </Frame>
+
+        <Frame HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Label x:Name="lblButton" Text="" TextColor="Black"/>
+                <Button Text="Button Click" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
